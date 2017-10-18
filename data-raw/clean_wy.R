@@ -43,4 +43,7 @@ extra_parsed <- purrr::map_df(extra_sj, parse_extra)
 
 water_years <- dplyr::bind_rows(sac, extra_parsed, san_joaquin)
 
-devtools::use_data(water_years)
+water_years$Yr_type <- factor(water_years$Yr_type, levels = c('C', 'D', 'BN', 'AN', 'W'),
+                               labels = c('Critical', 'Dry', 'Below Normal', 'Above Normal', 'Wet'))
+
+devtools::use_data(water_years, overwrite = TRUE)
