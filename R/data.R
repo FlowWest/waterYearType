@@ -1,4 +1,4 @@
-#' Water Year Index and Type 1901-2016
+#' Water Year Index and Type 1901-2017
 #'
 #' @description
 #' \strong{Department of Water Resources}
@@ -89,4 +89,4 @@
 #'
 #' @source California Department of Water Resources, California Data Exchange Center (CDEC)
 #'
-'water_years'
+'water_year_indices'

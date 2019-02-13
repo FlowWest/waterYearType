@@ -3,9 +3,9 @@ Type: Package
 Title: Sacramento and San Joaquin Valley Water Year Types
 Version: 1.0.0
 Authors@R: person("Sadie", "Gill", email = "sgill@flowwest.com", role = "cre")
-Description: Chronological Reconstructed Sacramento and San Joaquin Valley Water Year Hydrologic Classification Indices
+Description: Chronological reconstructed Sacramento and San Joaquin Valley water year hydrologic classification indices.
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
