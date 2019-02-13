@@ -1,11 +1,9 @@
 Package: waterYearType
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Sacramento and San Joaquin Valley Water Year Types
+Version: 1.0.0
+Authors@R: person("Sadie", "Gill", email = "sgill@flowwest.com", role = "cre")
+Description: Chronological Reconstructed Sacramento and San Joaquin Valley Water Year Hydrologic Classification Indices
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
