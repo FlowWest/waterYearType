@@ -87,6 +87,8 @@
 #' \item{location}{Sacramento Valley or San Joaquin Valley}
 #' }
 #'
-#' @source California Department of Water Resources, California Data Exchange Center (CDEC)
+#' @examples
+#' head(water_year_indices)
 #'
+#' @source California Department of Water Resources, California Data Exchange Center (CDEC)
 'water_year_indices'

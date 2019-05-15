@@ -11,10 +11,9 @@ san_joaquin <- dplyr::mutate(wy[ , c(1, 7:11)], location = 'San Joaquin Valley')
 names(sac) <- c('WY', 'Oct_Mar', 'Apr_Jul', 'WYsum', 'Index', 'Yr_type', 'location')
 names(san_joaquin) <- c('WY', 'Oct_Mar', 'Apr_Jul', 'WYsum', 'Index', 'Yr_type', 'location')
 
-water_year_indices <- dplyr::bind_rows(sac, san_joaquin)
-
-water_year_indices$Yr_type <- factor(water_years$Yr_type, levels = c('C', 'D', 'BN', 'AN', 'W'),
-                               labels = c('Critical', 'Dry', 'Below Normal', 'Above Normal', 'Wet'))
+water_year_indices <- dplyr::bind_rows(sac, san_joaquin) %>%
+  dplyr::mutate(Yr_type = factor(Yr_type, levels = c('C', 'D', 'BN', 'AN', 'W'),
+                              labels = c('Critical', 'Dry', 'Below Normal', 'Above Normal', 'Wet')))
 
 devtools::use_data(water_year_indices, overwrite = TRUE)
 

@@ -94,4 +94,8 @@ Eight River Index = Sacramento River Runoff + San Joaquin River Runoff
 This Index is used from December through May to set flow objectives
 as implemented in SWRCB Decision 1641.
 }
+\examples{
+head(water_year_indices)
+
+}
 \keyword{datasets}
