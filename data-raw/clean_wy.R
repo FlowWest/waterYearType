@@ -15,6 +15,6 @@ water_year_indices <- dplyr::bind_rows(sac, san_joaquin) %>%
   dplyr::mutate(Yr_type = factor(Yr_type, levels = c('C', 'D', 'BN', 'AN', 'W'),
                               labels = c('Critical', 'Dry', 'Below Normal', 'Above Normal', 'Wet')))
 
-devtools::use_data(water_year_indices, overwrite = TRUE)
+usethis::use_data(water_year_indices, overwrite = TRUE)
 
 
